@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مستشفى روح الحياة الطبي</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif; line-height: 1.7; color: #2c3e50; background: #f5f7fa; }
-        .top-bar { background: #1a237e; color: white; padding: 6px 0; font-size: 13px; }
-        .top-bar .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center; }
-        header { background: white; box-shadow: 0 2px 15px
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مستشفى روح الحياة الطبي</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:#f5f7fa;color:#1a237e;line-height:1.7}
+.top-bar{background:#0d47a1;color:#fff;text-align:center;padding:6px 0;font-size:13px}
+header{background:#fff;box-shadow:0 2px 15px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+nav{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:45px;height:45px;background:linear-gradient(135deg,#1976d2,#0d47a1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px}
+.logo h1{font-size:18px;color:#0d47a1;font-weight:700}
+.nav-links{display:flex;gap:25px;list-style:none}
+.nav-links a{color:#37474f;text-decoration:none;font-weight:600;font-size:15px}
+.hero{background:linear-gradient(135deg,#0d47a1 0%,#1976d2 100%);color:#fff;padding:80px 20px;text-align:center}
+.hero-icon{width:90px;height:90px;background:rgba(255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;font-size:45px;border:2px solid rgba(255,255,0.3)}
+.hero h2{font-size:38px;margin-bottom:12px;font-weight:700}
+.hero p{font-size:19px;margin-bottom:35px;opacity:0.95}
+.btn{display:inline-block;padding:15px 40px;background:#fff;color:#0d47a1;text-decoration:none;border-radius:50px;font-weight:700;font-size:16px}
+.offers-bar{background:#0d47a1;color:#fff;padding:10px 0;overflow:hidden;white-space:nowrap}
+.offers-bar-content{display:inline-block;animation:scroll 30s linear infinite;padding-right:100%}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(100%)}}
+.offers-bar span{margin:0 50px;font-weight:600;font-size:14px}
+.container{max-width:1200px;margin:0 auto;padding:70px 20px}
+.section-title{text-align:center;font-size:32px;color:#0d47a1;margin-bottom:12px;font-weight:700}
+.section-subtitle{text-align:center;color:#546e7a;margin-bottom:50px;font-size:17px}
+.about{background:#fff;border-radius:20px;padding:50px 40px;box-shadow:0 5px 25px rgba(0,0,0,0.06);margin-bottom:70px}
+.about-text{text-align:center;font-size:17px;line-height:2;color:#455a64;max-width:800px;margin:0 auto 40px}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.about-card{text-align:center;padding:35px 25px;background:#f5f7fa;border-radius:15px}
+.about-card i{font-size:45px;color:#1976d2;margin-bottom:15px}
+.about-card h3{font-size:20px;color:#0d47a1;margin-bottom:8px}
+.departments{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px}
+.dept-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,0.07)}
+.dept-header{background:linear-gradient(135deg,#1976d2,#0d47a1);color:#fff;padding:30px 25px;text-align:center}
+.dept-header i{font-size:50px;margin-bottom:12px}
+.dept-header h3{font-size:22px;font-weight:700}
+.dept-body{padding:30px 25px}
+.service-list{list-style:none}
+.service-list li{padding:14px 0;border-bottom:1px solid #eceff1;display:flex;align-items:center;font-size:15px;color:#455a64}
+.service-list li:last-child{border-bottom:none}
+.service-list li i{color:#1976d2;margin-left:12px;font-size:14px}
+.contact{background:#fff;border-radius:20px;padding:50px 40px;box-shadow:0 5px 25px rgba(0,0,0,0.06)}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;margin-top:35px}
+.contact-item{text-align:center;padding:30px 20px;background:#f5f7fa;border-radius:15px}
+.contact-item i{font-size:42px;color:#1976d2;margin-bottom:15px}
+.contact-item h3{font-size:19px;color:#0d47a1;margin-bottom:8px}
+footer{background:#1a237e;color:#fff;text-align:center;padding:35px 20px;margin-top:70px}
+@media (max-width:768px){.hero{padding:60px 20px}.hero h2{font-size:30px}.nav-links{gap:15px;font-size:13px}.logo h1{font-size:16px}.container{padding:50px 15px}.departments{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top-bar"><i class="fas fa-map-marker-alt"></i> شارع الخليج مجاور البوابة العزيزية - واسط</div>
+<header><nav><div class="logo"><div class="logo-icon"><i class="fas fa-heartbeat"></i></div><h1>مستشفى روح الحياة الطبي</h1></div><ul class="nav-links"><li><a href="#home">الرئيسية</a></li><li><a href="#about">من نحن</a></li><li><a href="#departments">الأقسام</a></li><li><a href="#contact">تواصل</a></li></ul></nav></header>
+<section class="hero" id="home"><div class="hero-icon"><i class="fas fa-hospital"></i></div><h2>مستشفى روح الحياة الطبي</h2><p>رعايتكم هي رسالتنا الأولى</p><a href="#contact" class="btn">احجز موعدك الآن</a></section>
+<div class="offers-bar"><div class="offers-bar-content"><span><i class="fas fa-tag"></i> خصم 30% على تنظيف الأسنان</span><i class="fas fa-star"></i> عروض البوتوكس والفلر تبدأ من 500,000 د.ع</span><span><i class="fas fa-eye"></i> فحص العيون مجاني كل خميس</span></div></div>
+<div class="container">
+<section id="about" class="about"><h2 class="section-title">من نحن</h2><p class="section-subtitle">نقدم أفضل الخدمات الطبية بأحدث التقنيات</p><p class="about-text">تأسس <strong>مستشفى روح الحياة الطبي</strong> ليكون صرحًا طبيًا متكاملاً يخدم أهالي العزيزية وواسط. رؤيتنا أن نكون الخيار الأول للرعاية الصحية المتميزة.</p><div class="about-grid"><div class="about-card"><i class="fas fa-bullseye"></i><h3>رؤيتنا</h3><p>الريادة في الرعاية الصحية المتكاملة</p></div><div class="about-card"><i class="fas fa-hand-holding-heart"></i><h3>رسالتنا</h3><p>صحة المريض أولويتنا القصوى</p></div><div class="about-card"><i class="fas fa-award"></i><h3>قيمنا</h3><p>الجودة، الثقة، الرحمة، الابتكار</p></div></div></section>
+<section id="departments"><h2 class="section-title">الأقسام الطبية</h2><p class="section-subtitle">نخبة من التخصصات الطبية تحت سقف واحد</p><div class="departments">
+<div class="dept-card"><div class="dept-header"><i class="fas fa-tooth"></i><h3>قسم الأسنان</h3></div><div class="dept-body"><ul class="service-list"><li><i class="fas fa-check-circle"></i> تقويم الأسنان</li><li><i class="fas fa-check-circle"></i> حشوات تجميلية</li><li><i class="fas fa-check-circle"></i> تصميم الابتسامة</li><li><i class="fas fa-check-circle"></i> زراعة الأسنان</li></ul></div></div>
+<div class="dept-card"><div class="dept-header"><i class="fas fa-spa"></i><h3>قسم التجميل</h3></div><div class="dept-body"><ul class="service-list"><li><i class="fas fa-check-circle"></i> تنظيف البشرة العميق</li><li><i class="fas fa-check-circle"></i> تجميل الأنف</li><li><i class="fas fa-check-circle"></i> الفلر والبوتوكس</li><li><i class="fas fa-check-circle"></i> قص الأجفان</li></ul></div></div>
+<div class="dept-card"><div class="dept-header"><i class="fas fa-bolt"></i><h3>قسم الليزر</h3></div><div class="dept-body"><ul class="service-list"><li><i class="fas fa-check-circle"></i> ليزر الوجه والرقبة</li><li><i class="fas fa-check-circle"></i> ليزر كامل للجسم</li><li><i class="fas fa-check-circle"></i> إزالة التصبغات</li></ul></div></div>
+<div class="dept-card"><div class="dept-header"><i class="fas fa-eye"></i><h3>قسم العيون</h3></div><div class="dept-body"><ul class="service-list"><li><i class="fas fa-check-circle"></i> فحص النظر الشامل</li><li><i class="fas fa-check-circle"></i> عمليات الليزك</li><li><i class="fas fa-check-circle"></i> علاج الماء الأبيض</li></ul></div></div>
+<div class="dept-card"><div class="dept-header"><i class="fas fa-heartbeat"></i><h3>قسم الباطنية</h3></div><div class="dept-body"><ul class="service-list"><li><i class="fas fa-check-circle"></i> أمراض القلب</li><li><i class="fas fa-check-circle"></i> السكري والغدد</li><li><i class="fas fa-check-circle"></i> الجهاز الهضمي</li></ul></div></div>
+</div></section>
+<section id="contact" class="contact"><h2 class="section-title">تواصل معنا</h2><p class="section-subtitle">نحن هنا لخدمتكم على مدار الساعة</p><div class="contact-grid"><div class="contact-item"><i class="fas fa-phone"></i><h3>اتصل بنا</h3><p>07XX XXXX</p></div><div class="contact-item"><i class="fas fa-map-marker-alt"></i><h3>العنوان</h3><p>شارع الخليج مجاور البوابة العزيزية</p></div><div class="contact-item"><i class="fas fa-clock"></i><h3>أوقات العمل</h3><p>8 صباحًا - 10 مساءً</p></div></div></section>
+</div>
+<footer><p>&copy; 2026 مستشفى روح الحياة الطبي. جميع الحقوق محفوظة.</p></footer>
+</body>
+    </html>
