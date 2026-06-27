@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مستشفى روح الحياة الطبي - العزيزية</title>
+    <title>مستشفى روح الحياة الطبي</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif; line-height: 1.7; color: #1a237e; background: #f5f7fa; }
-        .top-bar { background: #0d47a1; color: white; padding: 6px 0; font-size: 13px; text-align: center; }
-        .top-bar i { margin-left: 6px; }
-        header { background: white; box-shadow: 0 2px 20px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-        nav { max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { display: flex; align-items: center; gap: 12px; }
-        .logo img { height: 55px; width: 55px; object-fit: contain; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0.1); }
-        .logo h1 { font-size: 18px; color: #0d47a1; font-weight: 800; line-height: 1.2; }
-        .nav-links { display: flex; gap: 25px; list-style: none; }
-        .nav-links a { color: #37474f; text-decoration: none; font-weight: 600; font-size: 15px; transition: color 0.3s; }
-        .nav-links a:hover { color: #1976d2; }
-        .hero { position: relative; height: 600px; background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIbGNtcwIQAABtbnRyUkdCIFhZWiAH4gADABQACQAOAB1hY3NwTVNGVAAAAABzYXdzY3RybAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWhhbmSdkQA9QICwPUB0LIGepSKOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAABxjcHJ0AAABDAAAAAx3dHB0AAABGAAAABRyWFlaAAABLAAAABRnWFlaAAABQAAAABRiWFlaAAABVAAAABRyVFJDAAABaAAAAGBnVFJDAAABaAAAAGBiVFJDAAABaAAAAGBkZXNjAAAAAAAAAAV1UkdCAAAAAAAAAAAAAAAAdGV4dAAAAABDQzAAWFlaIAAAAAAAAPNUAAEAAAABFslYWVogAAAAAAAAb6AAADjyAAADj1hZWiAAAAAAAABilgAAt4kAABjaWFlaIAAAAAAAACSgAAAPhQAAtsRjdXJ2AAAAAAAAACoAAAB8APgBnAJ1A4MEyQZOCBIKGAxiDvQRzxT2GGocLiBDJKwpai5+M+s5sz/WRldNNlR2XBdkHWyGdVZ+jYgskjacq6eMstu+mcrH12Xkd/H5////2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAZAAtADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDiKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqe0tJ72cQ20ZdyCcdMAckk9hUUcbyyLHGpZ3IVVHUk9BXpOn+F5tO8N3UMHlnUruPY7scBQeqg+wz9TQB5pVy00+S5XfuCJ2JGc1PeaLNp+qrYXUkfmFdxMbbscH9eK0LMBbSID+7QBR/sb/pv/45/wDXo/sb/pv/AOOf/XratY0luYo5WKIzAFh2qyunZkvIS5863BZVx98A8/pQBzn9jf8ATf8A8c/+vT28Pym282GYSN/cK4z+tbT2wSwjuGbDSOQq+qjqfzqe0/491/Gpk7I5sTUlTgpR7nDkYOD1rR0PSX1e/WDzBFEMeZKRkLk4H4kkAVVv+L+5A/56t/M1f0TXG0sxxNbxSQeeszkr8/Hoc9ucZ7mqOhO6uSrodtF5z318beEXLW0TCLcXKnliMjAHFZF1CLe6lhEiSiNyokQ5VsHqD6Vv/wDCQ2txcObq1kCLctcQGAqCCeCCCCDnAJ980+DQpdV8VzW1/C1h5qtOI1wdoPQDt/8AqoGcxWloekvq9+sHmCKIY8yUjIXJwPxJIArPkXZIyZztJFauia42lmOJreKSDz1mclfn49DntzjPc0ASrodtF5z318beEXLW0TCLcXKnliMjAHFZF1CLe6lhEiSiNyokQ5VsHqD6Vv8A/CQ2txcObq1kCLctcQGAqCCeCCCCDnAJ980+DQpdV8VzW1/C1h5qtOI1wdoPQDt/+qgDmKmtraa7uEgtomllc4VVGSajkXZIyZztJFaGj61daOZzZ+UrzKEMjpkp7igDXTwd9njV9Y1W1sCwyEJDN/MfpmlHhfSp
+        body { font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif; line-height: 1.7; color: #2c3e50; background: #f5f7fa; }
+        .top-bar { background: #1a237e; color: white; padding: 6px 0; font-size: 13px; }
+        .top-bar .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center; }
+        header { background: white; box-shadow: 0 2px 15px
